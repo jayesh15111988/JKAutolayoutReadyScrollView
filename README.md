@@ -1,6 +1,10 @@
 # JKAutolayoutReadyScrollView
+
+
+![alt text][UIScrollViewAutolayoutDemo]
+
 <p>
-A library to create readymade and ready-to-plug in scrollview with autolayout constraints to stretch as per the content size.
+A library to create ready-made and ready-to-plug in scrollview with autolayout constraints to stretch as per the content size.
 This project born from my experince of how much painful it is to make UIScrollView work with autolayout seemlessly. It took me a while to fully understand how this is done and this library is the fruit of those efforts.
 
 ###Here's how to use this library :
@@ -23,7 +27,7 @@ Just call following instance method with vertically last view as a parameter and
 
 And that's it. It is done. You don't even need to add contentView to the ```superView```, as mentioned earlier, it is all done by the library when you intialize it with a ```superView```.
 
->Note : This library uses TPKeyboardAvoidingScrollView which is useful for avoiding >keyboard while typing in the UITextField, UITextView or any relevant input field which >accepts input characters. This is done automatically behind the curtains so that you >do not have to worry about it.
+>Note : This library uses TPKeyboardAvoidingScrollView which is useful for avoiding >keyboard while typing in the UITextField, UITextView or any relevant input field which >accepts input characters. This is done automatically behind the curtains so that you do not have to worry about it.
 
 <b>If you face any difficuly integrating this library, you can always refer to the example added to the project. If that is not enough, do not hesitate to contact me on the email address. </b>
 
@@ -31,3 +35,4 @@ And that's it. It is done. You don't even need to add contentView to the ```supe
 
 Cheers</i>
 
+[UIScrollViewAutolayoutDemo]: https://github.com/jayesh15111988/JKAutolayoutReadyScrollView/blob/master/Demo/Autolayout_Demo.gif "UIScrollView - Autolayout Demo"
