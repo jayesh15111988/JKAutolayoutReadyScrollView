@@ -14,6 +14,8 @@
 		38FB79F51B59E4D30072B5BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FB79F41B59E4D30072B5BA /* Images.xcassets */; };
 		38FB79F81B59E4D30072B5BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FB79F61B59E4D30072B5BA /* LaunchScreen.xib */; };
 		38FB7A041B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB7A031B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests.m */; };
+		38FB7A101B59E6300072B5BA /* ScrollViewAutolayoutCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB7A0F1B59E6300072B5BA /* ScrollViewAutolayoutCreator.m */; };
+		C5413118B127488FE1B8F37D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962FFEEA971DF8B36C85417A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2064090043195140F73C99AB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		38FB79E41B59E4D30072B5BA /* JKAutolayoutReadyScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKAutolayoutReadyScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FB79E81B59E4D30072B5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FB79E91B59E4D30072B5BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,10 @@
 		38FB79FD1B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKAutolayoutReadyScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FB7A021B59E4D30072B5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FB7A031B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAutolayoutReadyScrollViewTests.m; sourceTree = "<group>"; };
+		38FB7A0E1B59E6300072B5BA /* ScrollViewAutolayoutCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewAutolayoutCreator.h; sourceTree = "<group>"; };
+		38FB7A0F1B59E6300072B5BA /* ScrollViewAutolayoutCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewAutolayoutCreator.m; sourceTree = "<group>"; };
+		962FFEEA971DF8B36C85417A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3C16D06ED488F4C4153CF6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5413118B127488FE1B8F37D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2221E0EBB11C5BF98915DAD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2064090043195140F73C99AB /* Pods.debug.xcconfig */,
+				DF3C16D06ED488F4C4153CF6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		38FB79DB1B59E4D30072B5BA = {
 			isa = PBXGroup;
 			children = (
 				38FB79E61B59E4D30072B5BA /* JKAutolayoutReadyScrollView */,
 				38FB7A001B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests */,
 				38FB79E51B59E4D30072B5BA /* Products */,
+				2221E0EBB11C5BF98915DAD6 /* Pods */,
+				F24801FBEE09990A8A91767E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +100,7 @@
 		38FB79E61B59E4D30072B5BA /* JKAutolayoutReadyScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				38FB7A0D1B59E60A0072B5BA /* Classes */,
 				38FB79EB1B59E4D30072B5BA /* AppDelegate.h */,
 				38FB79EC1B59E4D30072B5BA /* AppDelegate.m */,
 				38FB79EE1B59E4D30072B5BA /* ViewController.h */,
@@ -99,7 +119,7 @@
 				38FB79E81B59E4D30072B5BA /* Info.plist */,
 				38FB79E91B59E4D30072B5BA /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		38FB7A001B59E4D30072B5BA /* JKAutolayoutReadyScrollViewTests */ = {
@@ -116,7 +136,24 @@
 			children = (
 				38FB7A021B59E4D30072B5BA /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38FB7A0D1B59E60A0072B5BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38FB7A0E1B59E6300072B5BA /* ScrollViewAutolayoutCreator.h */,
+				38FB7A0F1B59E6300072B5BA /* ScrollViewAutolayoutCreator.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F24801FBEE09990A8A91767E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				962FFEEA971DF8B36C85417A /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38FB7A071B59E4D30072B5BA /* Build configuration list for PBXNativeTarget "JKAutolayoutReadyScrollView" */;
 			buildPhases = (
+				593D11AA32DF304921964FDA /* Check Pods Manifest.lock */,
 				38FB79E01B59E4D30072B5BA /* Sources */,
 				38FB79E11B59E4D30072B5BA /* Frameworks */,
 				38FB79E21B59E4D30072B5BA /* Resources */,
+				746F82430DE87B1D5B60C7E9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +253,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		593D11AA32DF304921964FDA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		746F82430DE87B1D5B60C7E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38FB79E01B59E4D30072B5BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				38FB79F01B59E4D30072B5BA /* ViewController.m in Sources */,
+				38FB7A101B59E6300072B5BA /* ScrollViewAutolayoutCreator.m in Sources */,
 				38FB79ED1B59E4D30072B5BA /* AppDelegate.m in Sources */,
 				38FB79EA1B59E4D30072B5BA /* main.m in Sources */,
 			);
@@ -250,6 +323,7 @@
 				38FB79F21B59E4D30072B5BA /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		38FB79F61B59E4D30072B5BA /* LaunchScreen.xib */ = {
@@ -258,6 +332,7 @@
 				38FB79F71B59E4D30072B5BA /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,9 +422,10 @@
 		};
 		38FB7A081B59E4D30072B5BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2064090043195140F73C99AB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JKAutolayoutReadyScrollView/Info.plist;
+				INFOPLIST_FILE = "JKAutolayoutReadyScrollView/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +433,10 @@
 		};
 		38FB7A091B59E4D30072B5BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3C16D06ED488F4C4153CF6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JKAutolayoutReadyScrollView/Info.plist;
+				INFOPLIST_FILE = "JKAutolayoutReadyScrollView/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -377,7 +454,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JKAutolayoutReadyScrollViewTests/Info.plist;
+				INFOPLIST_FILE = "JKAutolayoutReadyScrollViewTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKAutolayoutReadyScrollView.app/JKAutolayoutReadyScrollView";
@@ -392,7 +469,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JKAutolayoutReadyScrollViewTests/Info.plist;
+				INFOPLIST_FILE = "JKAutolayoutReadyScrollViewTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKAutolayoutReadyScrollView.app/JKAutolayoutReadyScrollView";
@@ -418,6 +495,7 @@
 				38FB7A091B59E4D30072B5BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38FB7A0A1B59E4D30072B5BA /* Build configuration list for PBXNativeTarget "JKAutolayoutReadyScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				38FB7A0C1B59E4D30072B5BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

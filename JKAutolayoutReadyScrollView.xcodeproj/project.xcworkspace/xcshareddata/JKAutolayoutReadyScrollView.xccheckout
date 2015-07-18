@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CAD9EFDE-800C-4B56-B795-B78E4C2F1C04</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>24D8FFA937C86BDFDA15A0CC34FA35CE00B9D167</key>
+		<string>github.com:jayesh15111988/JKAutolayoutReadyScrollView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JKAutolayoutReadyScrollView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>24D8FFA937C86BDFDA15A0CC34FA35CE00B9D167</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jayesh15111988/JKAutolayoutReadyScrollView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>24D8FFA937C86BDFDA15A0CC34FA35CE00B9D167</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24D8FFA937C86BDFDA15A0CC34FA35CE00B9D167</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JKAutolayoutReadyScrollView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
