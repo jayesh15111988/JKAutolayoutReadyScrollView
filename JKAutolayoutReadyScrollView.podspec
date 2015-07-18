@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/jayesh15111988/JKAutolayoutReadyScrollView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Jayesh Kawli" => "j.kawli@gmail.com" }
-  s.source       = { :git => "https://github.com/jayesh15111988/JKAutolayoutReadyScrollView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jayesh15111988/JKAutolayoutReadyScrollView.git", :tag => "#{s.version}"}
   s.ios.deployment_target = '7.0'
   s.source_files = 'JKAutolayoutReadyScrollView/Classes/*.{h,m}'
   s.requires_arc = true
