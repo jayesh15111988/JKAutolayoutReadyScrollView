@@ -11,7 +11,7 @@
 
 @implementation ScrollViewAutolayoutCreator
 
-- (instancetype)initWithSuperView:(UIView*)superView {
+- (instancetype)initWithSuperView:(UIView*)superView andHorizontalScrollingEnabled:(BOOL)horizontalScrollingEnabled {
     
     if (self = [super init]) {
         TPKeyboardAvoidingScrollView* scrollView = [TPKeyboardAvoidingScrollView new];
@@ -22,8 +22,10 @@
         [superView addSubview:scrollView];
         [scrollView addSubview:_contentView];
     
-        [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0]];
-        [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0]];
+        if (!horizontalScrollingEnabled) {
+            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0]];
+            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0]];
+        }
     
         NSDictionary* view = NSDictionaryOfVariableBindings(scrollView, _contentView);
     

@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) UIView* contentView;
 
-- (instancetype)initWithSuperView:(UIView*)superView;
+- (instancetype)initWithSuperView:(UIView*)superView andHorizontalScrollingEnabled:(BOOL)horizontalScrollingEnabled;
 - (void)addBottomSpaceConstraintToLastView:(UIView*)lastView withBottomPadding:(CGFloat)bottomPadding;
 
 @end
