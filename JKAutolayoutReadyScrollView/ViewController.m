@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ScrollViewAutolayoutCreator* autoLayoutScrolView = [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view];
+    ScrollViewAutolayoutCreator* autoLayoutScrolView = [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view andHorizontalScrollingEnabled:NO];
     UITextField* textF = [UITextField new];
     textF.translatesAutoresizingMaskIntoConstraints = NO;
     textF.borderStyle = UITextBorderStyleBezel;

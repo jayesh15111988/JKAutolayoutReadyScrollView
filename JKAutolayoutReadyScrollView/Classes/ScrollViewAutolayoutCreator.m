@@ -23,8 +23,8 @@
         [scrollView addSubview:_contentView];
     
         if (!horizontalScrollingEnabled) {
-            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0]];
-            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0]];
+            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0]];
+            [superView addConstraint:[NSLayoutConstraint constraintWithItem:superView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_contentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0]];
         }
     
         NSDictionary* view = NSDictionaryOfVariableBindings(scrollView, _contentView);
