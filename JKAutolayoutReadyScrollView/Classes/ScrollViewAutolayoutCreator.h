@@ -15,5 +15,9 @@
 
 - (instancetype)initWithSuperView:(UIView*)superView andHorizontalScrollingEnabled:(BOOL)horizontalScrollingEnabled;
 - (void)addBottomSpaceConstraintToLastView:(UIView*)lastView withBottomPadding:(CGFloat)bottomPadding;
+- (void)scrollToTop;
+- (void)scrollToRight;
+- (void)scrollToBottom;
+- (void)scrollToLeft;
 
 @end
