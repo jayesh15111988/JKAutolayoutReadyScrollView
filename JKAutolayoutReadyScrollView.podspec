@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JKAutolayoutReadyScrollView"
-  s.version      = '0.2'
+  s.version      = '0.4'
   s.summary      = "A readymade scrollview equipped with Autolayout settings."
   s.homepage     = "https://github.com/jayesh15111988/JKAutolayoutReadyScrollView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
