@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ScrollViewAutolayoutCreator* autoLayoutScrolView = [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view andHorizontalScrollingEnabled:NO];
+    ScrollViewAutolayoutCreator* autoLayoutScrolView = [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view andHorizontalScrollingEnabled:YES];
     UITextField* textF = [UITextField new];
     textF.translatesAutoresizingMaskIntoConstraints = NO;
     textF.borderStyle = UITextBorderStyleBezel;
@@ -34,7 +34,7 @@
     
     NSDictionary* views = NSDictionaryOfVariableBindings(textF, lab);
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[textF]-10-|" options:kNilOptions metrics:nil views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-200-[textF]-10-|" options:kNilOptions metrics:nil views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-500-[textF]" options:kNilOptions metrics:nil views:views]];
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[lab]-10-|" options:kNilOptions metrics:nil views:views]];
